@@ -36,3 +36,6 @@ vector_store/
 
 # Logs
 *.log
+
+# Raw data (PDFs)
+data/raw/
