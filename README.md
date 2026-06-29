@@ -36,6 +36,33 @@ QA-bot/
 ├── pyproject.toml
 └── README.md
 ```
+## Workflow
+
+Once documents have been processed and indexed into the vector database, the system enters the online inference phase. This workflow is executed every time a user asks a question.
+
+```text
+User
+  ↓
+GUI (FastAPI)
+  ↓
+User Query
+  ↓
+Query Validation
+  ↓
+Load FAISS Vector Store
+  ↓
+Retriever (Similarity Search)
+  ↓
+Top-K Relevant Chunks
+  ↓
+Prompt Construction
+  ↓
+LLM (AI Model)
+  ↓
+Generated Answer
+  ↓
+Display Answer in GUI
+```
 
 ## Installation
 
@@ -46,6 +73,7 @@ cd QA-bot
 uv venv
 uv sync
 ```
+
 
 ## Run Document Ingestion
 
