@@ -18,6 +18,12 @@ def main(
 
     logger.info(f"Loaded {len(documents)} pages")
 
+    for i, doc in enumerate(documents):
+
+        logger.info(
+            f"Page {i}: {len(doc.page_content)} characters"
+        )
+
     splitter = DocumentSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap
