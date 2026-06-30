@@ -1453,6 +1453,7 @@ dependencies = [
     { name = "faiss-cpu" },
     { name = "langchain" },
     { name = "langchain-community" },
+    { name = "langchain-core" },
     { name = "langchain-ollama" },
 ]
 
@@ -1461,6 +1462,7 @@ requires-dist = [
     { name = "faiss-cpu" },
     { name = "langchain" },
     { name = "langchain-community" },
+    { name = "langchain-core", specifier = ">=1.4.8" },
     { name = "langchain-ollama" },
 ]
 
