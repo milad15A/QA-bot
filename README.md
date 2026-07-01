@@ -87,7 +87,7 @@ uv run python scripts/ingest_documents.py
 * [x] Logging system
 * [x] PDF ingestion pipeline
 * [x] FAISS integration
-* [ ] Retriever implementation
+* [x] Retriever implementation
 * [ ] QA chain
 * [ ] User interface
 
